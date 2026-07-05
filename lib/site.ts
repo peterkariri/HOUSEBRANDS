@@ -8,9 +8,9 @@ export const site = {
   city: "Eldoret",
   region: "North Rift",
   county: "Uasin Gishu",
-  phone: "+254 712 000 000",
-  phoneHref: "tel:+254712000000",
-  whatsapp: "254712000000",
+  phone: "+254 794 179883",
+  phoneHref: "tel:+254794179883",
+  whatsapp: "254794179883",
   email: "hello@titusbrands.co.ke",
   address: "Titus Brands Home Centre, Oginga Odinga Street, Eldoret CBD, Uasin Gishu, Kenya",
   hours: [
