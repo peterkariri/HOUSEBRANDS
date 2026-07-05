@@ -66,8 +66,8 @@ export default function AboutPage() {
           <Reveal>
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
-                <FurnitureVisual icon="sofa" tone="from-[#e8ddc7] to-[#c9b48c]" className="aspect-[4/5] rounded-3xl shadow-[var(--shadow-soft)]" />
-                <FurnitureVisual icon="table" tone="from-[#e6d7bb] to-[#cbb389]" className="mt-10 aspect-[4/5] rounded-3xl shadow-[var(--shadow-soft)]" />
+                <FurnitureVisual icon="bed" tone="from-[#e8ddc7] to-[#c9b48c]" className="aspect-[4/5] rounded-3xl shadow-[var(--shadow-soft)]" />
+                <FurnitureVisual icon="wardrobe" tone="from-[#e6d7bb] to-[#cbb389]" className="mt-10 aspect-[4/5] rounded-3xl shadow-[var(--shadow-soft)]" />
               </div>
               <div className="absolute bottom-4 left-4 rounded-2xl bg-white px-5 py-4 shadow-[var(--shadow-lift)]">
                 <p className="font-heading text-2xl font-extrabold text-forest">One roof</p>

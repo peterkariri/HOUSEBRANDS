@@ -42,14 +42,12 @@ const trust = [
 ];
 
 const catIconTone: Record<string, string> = {
-  "living-room": "from-[#e8ddc7] to-[#d3bd97]",
-  bedroom: "from-[#e9dcc6] to-[#d3bd97]",
-  dining: "from-[#e6d7bb] to-[#cbb389]",
-  office: "from-[#d7ddcf] to-[#aebfa1]",
-  kitchenware: "from-[#e6d8bd] to-[#ccb489]",
-  decor: "from-[#f0e6d2] to-[#dccbaa]",
-  "curtains-carpets": "from-[#efe6d3] to-[#dccdae]",
-  storage: "from-[#e5d6b9] to-[#c9b186]",
+  "upholstered-beds": "from-[#e9dcc6] to-[#d3bd97]",
+  "wooden-beds": "from-[#e8ddc7] to-[#c9b48c]",
+  "luxury-beds": "from-[#d8cbb0] to-[#b09873]",
+  "modern-beds": "from-[#cdd9c4] to-[#a7bd97]",
+  "metal-beds": "from-[#d9dcdf] to-[#9a9ca3]",
+  "bedroom-sets": "from-[#e6d3b0] to-[#cbb488]",
 };
 
 export default function Home() {
@@ -136,7 +134,7 @@ export default function Home() {
             <div className="relative mx-auto grid max-w-lg grid-cols-2 gap-4">
               <div className="space-y-4">
                 <FurnitureVisual
-                  icon="sofa"
+                  icon="bed"
                   tone="from-[#e8ddc7] to-[#c9b48c]"
                   className="float-slow aspect-[4/5] rounded-3xl shadow-[var(--shadow-lift)]"
                   iconClass="h-28 w-28"
@@ -149,7 +147,7 @@ export default function Home() {
               </div>
               <div className="space-y-4 pt-8">
                 <FurnitureVisual
-                  icon="table"
+                  icon="wardrobe"
                   tone="from-[#e3d3b6] to-[#c9b48c]"
                   className="aspect-square rounded-3xl shadow-[var(--shadow-soft)]"
                 />
@@ -253,7 +251,7 @@ export default function Home() {
               </div>
               <div className="relative hidden justify-self-end lg:block">
                 <FurnitureVisual
-                  icon="chair"
+                  icon="bed"
                   tone="from-[#cdd9c4] to-[#a7bd97]"
                   className="float-slow h-64 w-64 rounded-full shadow-2xl"
                   iconClass="h-32 w-32"
@@ -326,8 +324,8 @@ export default function Home() {
           <Reveal>
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
-                <FurnitureVisual icon="sofa" tone="from-[#e8ddc7] to-[#c9b48c]" className="aspect-square rounded-3xl shadow-[var(--shadow-soft)]" />
-                <FurnitureVisual icon="kitchen" tone="from-[#e6d8bd] to-[#ccb489]" className="mt-8 aspect-square rounded-3xl shadow-[var(--shadow-soft)]" />
+                <FurnitureVisual icon="bed" tone="from-[#e8ddc7] to-[#c9b48c]" className="aspect-square rounded-3xl shadow-[var(--shadow-soft)]" />
+                <FurnitureVisual icon="wardrobe" tone="from-[#e6d8bd] to-[#ccb489]" className="mt-8 aspect-square rounded-3xl shadow-[var(--shadow-soft)]" />
                 <FurnitureVisual icon="bed" tone="from-[#e9dcc6] to-[#d3bd97]" className="aspect-square rounded-3xl shadow-[var(--shadow-soft)]" />
                 <FurnitureVisual icon="lamp" tone="from-[#cdd9c4] to-[#a7bd97]" className="mt-8 aspect-square rounded-3xl shadow-[var(--shadow-soft)]" />
               </div>
@@ -505,7 +503,7 @@ export default function Home() {
                   href={`/blog/${p.slug}`}
                   className="group flex h-full flex-col overflow-hidden rounded-2xl border border-black/5 bg-cream shadow-[var(--shadow-soft)] transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-lift)]"
                 >
-                  <FurnitureVisual icon="shelf" tone={p.tone} className="aspect-[16/10] w-full" />
+                  <FurnitureVisual icon={p.icon} tone={p.tone} className="aspect-[16/10] w-full" />
                   <div className="flex flex-1 flex-col p-5">
                     <span className="text-xs font-semibold uppercase tracking-wide text-forest-700">{p.category}</span>
                     <h3 className="mt-2 font-heading text-lg font-semibold text-ink group-hover:text-forest">{p.title}</h3>

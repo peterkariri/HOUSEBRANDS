@@ -23,6 +23,9 @@ export function ProductCard({ product }: { product: Product }) {
         <FurnitureVisual
           icon={product.icon}
           tone={product.tone}
+          src={product.image}
+          alt={product.name}
+          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           className="aspect-[4/3] w-full transition-transform duration-500 group-hover:scale-[1.03]"
         />
         <div className="absolute left-3 top-3 flex flex-col gap-1.5">

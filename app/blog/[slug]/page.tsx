@@ -70,10 +70,9 @@ export default async function BlogPostPage({
         </div>
 
         <FurnitureVisual
-          icon="sofa"
+          icon={post.icon}
           tone={post.tone}
           className="mx-auto mt-8 aspect-[16/8] w-full max-w-4xl rounded-3xl shadow-[var(--shadow-soft)]"
-          iconClass="h-32 w-32"
         />
 
         <div className="mx-auto mt-10 max-w-3xl">
@@ -117,7 +116,7 @@ export default async function BlogPostPage({
                 href={`/blog/${p.slug}`}
                 className="group flex h-full flex-col overflow-hidden rounded-2xl border border-black/5 bg-cream shadow-[var(--shadow-soft)] transition hover:-translate-y-1 hover:shadow-[var(--shadow-lift)]"
               >
-                <FurnitureVisual icon="shelf" tone={p.tone} className="aspect-[16/10] w-full" />
+                <FurnitureVisual icon={p.icon} tone={p.tone} className="aspect-[16/10] w-full" />
                 <div className="flex flex-1 flex-col p-5">
                   <span className="text-xs font-semibold uppercase tracking-wide text-forest-700">{p.category}</span>
                   <h3 className="mt-2 font-heading text-base font-semibold text-ink group-hover:text-forest">{p.title}</h3>

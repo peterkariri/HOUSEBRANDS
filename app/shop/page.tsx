@@ -4,9 +4,9 @@ import { PageHero } from "@/components/page-hero";
 import { ShopGrid } from "@/components/shop-grid";
 
 export const metadata: Metadata = {
-  title: "Shop Furniture & Household Items in Eldoret",
+  title: "Shop Beds & Bedroom Furniture in Eldoret",
   description:
-    "Shop quality furniture, mattresses, kitchenware, curtains, carpets, lighting and household essentials in Eldoret. Fast delivery, M-Pesa & card payments, real warranties.",
+    "Shop quality beds and bedroom furniture in Eldoret — upholstered, wooden, luxury, modern and metal beds plus complete bedroom sets. Fast delivery, M-Pesa & card, 2-year warranty.",
 };
 
 const perks = [
@@ -21,8 +21,8 @@ export default function ShopPage() {
     <>
       <PageHero
         eyebrow="Shop"
-        title="Furniture & household essentials for every home"
-        subtitle="Browse our curated collection of sofas, beds, dining sets, office furniture, kitchenware, décor and more — delivered across Eldoret and the North Rift."
+        title="Beds & bedroom furniture for every home"
+        subtitle="Browse our curated collection of upholstered, wooden, luxury, modern and metal beds — plus complete bedroom sets — delivered and assembled across Eldoret and the North Rift."
         crumbs={[{ label: "Home", href: "/" }, { label: "Shop" }]}
       />
 

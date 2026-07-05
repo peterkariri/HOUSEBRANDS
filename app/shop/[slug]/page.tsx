@@ -108,8 +108,11 @@ export default async function ProductPage({
             <FurnitureVisual
               icon={product.icon}
               tone={product.tone}
+              src={product.image}
+              alt={product.name}
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="aspect-square w-full rounded-3xl shadow-[var(--shadow-soft)]"
-              iconClass="h-40 w-40"
             />
             <div className="mt-4 grid grid-cols-4 gap-3">
               {[0, 1, 2, 3].map((i) => (
@@ -117,8 +120,10 @@ export default async function ProductPage({
                   key={i}
                   icon={product.icon}
                   tone={product.tone}
+                  src={product.image}
+                  alt={`${product.name} view ${i + 1}`}
+                  sizes="15vw"
                   className={`aspect-square rounded-xl ${i === 0 ? "ring-2 ring-forest" : "opacity-70"}`}
-                  iconClass="h-8 w-8"
                 />
               ))}
             </div>

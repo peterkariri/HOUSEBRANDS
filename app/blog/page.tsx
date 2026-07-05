@@ -35,7 +35,7 @@ export default function BlogPage() {
             href={`/blog/${featured.slug}`}
             className="group grid overflow-hidden rounded-3xl border border-black/5 bg-white shadow-[var(--shadow-soft)] transition hover:shadow-[var(--shadow-lift)] lg:grid-cols-2"
           >
-            <FurnitureVisual icon="sofa" tone={featured.tone} className="aspect-[16/10] w-full lg:aspect-auto lg:h-full" iconClass="h-28 w-28" />
+            <FurnitureVisual icon={featured.icon} tone={featured.tone} className="aspect-[16/10] w-full lg:aspect-auto lg:h-full" />
             <div className="flex flex-col justify-center p-8 lg:p-12">
               <span className="inline-flex w-fit rounded-full bg-gold/15 px-3 py-1 text-xs font-bold text-forest-900">
                 Featured · {featured.category}
@@ -65,7 +65,7 @@ export default function BlogPage() {
                 href={`/blog/${p.slug}`}
                 className="group flex h-full flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-[var(--shadow-soft)] transition hover:-translate-y-1 hover:shadow-[var(--shadow-lift)]"
               >
-                <FurnitureVisual icon="shelf" tone={p.tone} className="aspect-[16/10] w-full" />
+                <FurnitureVisual icon={p.icon} tone={p.tone} className="aspect-[16/10] w-full" />
                 <div className="flex flex-1 flex-col p-6">
                   <span className="text-xs font-semibold uppercase tracking-wide text-forest-700">{p.category}</span>
                   <h3 className="mt-2 font-heading text-lg font-semibold text-ink group-hover:text-forest">{p.title}</h3>

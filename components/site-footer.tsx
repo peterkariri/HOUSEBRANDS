@@ -7,12 +7,12 @@ import { site, serviceAreas } from "@/lib/site";
 import { paymentMethods } from "@/lib/data";
 
 const shopLinks = [
-  { label: "Living Room", href: "/shop" },
-  { label: "Bedroom", href: "/shop" },
-  { label: "Dining", href: "/shop" },
-  { label: "Office Furniture", href: "/shop" },
-  { label: "Kitchenware", href: "/shop" },
-  { label: "Curtains & Carpets", href: "/shop" },
+  { label: "Upholstered Beds", href: "/shop" },
+  { label: "Wooden Beds", href: "/shop" },
+  { label: "Luxury Beds", href: "/shop" },
+  { label: "Modern Beds", href: "/shop" },
+  { label: "Metal Beds", href: "/shop" },
+  { label: "Bedroom Sets", href: "/shop" },
 ];
 
 const serviceLinks = [
