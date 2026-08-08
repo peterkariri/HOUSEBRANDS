@@ -1,15 +1,15 @@
-import { promises as fs } from "node:fs";
-import path from "node:path";
 import { categories as seedCategories, products as seedProducts, type Product, type ProductIcon } from "./data";
+import { readText, writeText } from "./storage";
 
 /**
  * Runtime product store.
  *
  * `lib/data.ts` stays the seed catalogue that ships with the repo. Anything the
- * admin edits is written to `data/products.json`, which becomes the source of
+ * admin edits is written to the "products.json" record (see lib/storage.ts —
+ * disk locally, a Netlify Blob in production), which becomes the source of
  * truth for that product from then on. Products the admin has never touched
  * fall straight through to the seed, so the site works on a clean checkout with
- * no store file present.
+ * no store record present.
  */
 export type StoredProduct = Product & {
   /** ISO timestamp of the last admin edit. Absent for untouched seed products. */
@@ -23,8 +23,7 @@ export type Category = {
   blurb: string;
 };
 
-const DATA_DIR = path.join(process.cwd(), "data");
-const STORE_FILE = path.join(DATA_DIR, "products.json");
+const STORE_KEY = "products.json";
 
 type Store = { products: StoredProduct[] };
 
@@ -68,7 +67,8 @@ function reconcile(seed: Product, stored: StoredProduct | undefined): StoredProd
 async function readStore(): Promise<StoredProduct[]> {
   let parsed: Store | null = null;
   try {
-    parsed = JSON.parse(await fs.readFile(STORE_FILE, "utf8")) as Store;
+    const raw = await readText(STORE_KEY);
+    if (raw) parsed = JSON.parse(raw) as Store;
   } catch {
     // No store yet (or it is unreadable) — serve the seed catalogue.
   }
@@ -85,11 +85,7 @@ async function readStore(): Promise<StoredProduct[]> {
 }
 
 async function writeStore(products: StoredProduct[]) {
-  await fs.mkdir(DATA_DIR, { recursive: true });
-  // Write-then-rename so a crash mid-write can never leave a truncated file.
-  const tmp = `${STORE_FILE}.${process.pid}.tmp`;
-  await fs.writeFile(tmp, JSON.stringify({ products }, null, 2), "utf8");
-  await fs.rename(tmp, STORE_FILE);
+  await writeText(STORE_KEY, JSON.stringify({ products }, null, 2));
 }
 
 /** Every product, in catalogue order. */

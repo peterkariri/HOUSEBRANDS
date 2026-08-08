@@ -7,6 +7,8 @@ const nextConfig: NextConfig = {
   // Serve local product photos as-is — keeps the site fully static (no image
   // optimization server / sharp dependency).
   images: { unoptimized: true },
+  // Hide the dev-mode indicator badge (bottom-left corner).
+  devIndicators: false,
 };
 
 export default nextConfig;

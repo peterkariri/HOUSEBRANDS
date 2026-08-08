@@ -12,11 +12,11 @@
       "icon": "bed",
       "image": "/photostitus/amani-classic-tufted-bed.jpeg",
       "short": "A timeless espresso-wood frame with a soft cream tufted headboard and footboard.",
-      "description": "The Amani pairs a rich dark hardwood frame with a deep-buttoned cream headboard and matching footboard for a look that never dates. Solid, sturdy and beautifully finished \u2014 a warm, classic centrepiece for any bedroom.",
+      "description": "The Amani pairs a rich dark hardwood frame with a deep-buttoned cream headboard and matching footboard for a look that never dates. Solid, sturdy and beautifully finished — a warm, classic centrepiece for any bedroom.",
       "specs": [
         {
           "label": "Size",
-          "value": "6 \u00d7 6 ft (King)"
+          "value": "6 × 6 ft (King)"
         },
         {
           "label": "Frame",
@@ -47,12 +47,12 @@
       "tone": "from-[#f1ece1] to-[#ddceb0]",
       "icon": "bed",
       "image": "/photostitus/pearl-white-tufted-bed.jpeg",
-      "short": "Clean, bright and elegant \u2014 a crisp white frame with a button-tufted headboard.",
+      "short": "Clean, bright and elegant — a crisp white frame with a button-tufted headboard.",
       "description": "The Pearl brings a fresh, airy feel to the bedroom with its all-white wooden frame and softly padded, button-tufted headboard. It lifts any space and pairs effortlessly with light or bold bedding.",
       "specs": [
         {
           "label": "Size",
-          "value": "5 \u00d7 6 ft (Queen)"
+          "value": "5 × 6 ft (Queen)"
         },
         {
           "label": "Frame",
@@ -76,12 +76,12 @@
       "slug": "regal-carved-poster-bed",
       "name": "Regal Carved Poster Bed",
       "category": "Luxury Beds",
-      "price": 68000,
-      "rating": 4.9,
-      "reviews": 38,
+      "price": 6000,
+      "rating": 4.5,
+      "reviews": 0,
       "badge": "Low Stock",
       "inStock": true,
-      "tone": "from-[#d8cbb0] to-[#b09873]",
+      "tone": "from-[#e8ddc7] to-[#c9b48c]",
       "icon": "bed",
       "image": "/photostitus/regal-carved-poster-bed.jpeg",
       "short": "Hand-carved black hardwood with tall turned posts and cream leather tufting.",
@@ -89,7 +89,7 @@
       "specs": [
         {
           "label": "Size",
-          "value": "6 \u00d7 6 ft (King)"
+          "value": "6 × 6 ft (King)"
         },
         {
           "label": "Frame",
@@ -107,7 +107,10 @@
           "label": "Warranty",
           "value": "2 years"
         }
-      ]
+      ],
+      "oldPrice": null,
+      "priceNegotiable": false,
+      "updatedAt": "2026-08-08T08:31:30.236Z"
     },
     {
       "slug": "mahogany-deluxe-bed",
@@ -123,11 +126,11 @@
       "icon": "bed",
       "image": "/photostitus/mahogany-deluxe-bed.jpeg",
       "short": "Rich mahogany finish with padded grey panels for understated warmth.",
-      "description": "The Mahogany Deluxe combines a warm reddish-brown hardwood frame with softly padded grey panels on the headboard and footboard. Solid, substantial and welcoming \u2014 a dependable classic at a great price.",
+      "description": "The Mahogany Deluxe combines a warm reddish-brown hardwood frame with softly padded grey panels on the headboard and footboard. Solid, substantial and welcoming — a dependable classic at a great price.",
       "specs": [
         {
           "label": "Size",
-          "value": "6 \u00d7 6 ft (King)"
+          "value": "6 × 6 ft (King)"
         },
         {
           "label": "Frame",
@@ -164,7 +167,7 @@
       "specs": [
         {
           "label": "Size",
-          "value": "6 \u00d7 6 ft (King)"
+          "value": "6 × 6 ft (King)"
         },
         {
           "label": "Upholstery",
@@ -204,7 +207,7 @@
       "specs": [
         {
           "label": "Size",
-          "value": "6 \u00d7 6 ft (King)"
+          "value": "6 × 6 ft (King)"
         },
         {
           "label": "Upholstery",
@@ -240,7 +243,7 @@
       "specs": [
         {
           "label": "Size",
-          "value": "5 \u00d7 6 ft (Queen)"
+          "value": "5 × 6 ft (Queen)"
         },
         {
           "label": "Frame",
@@ -277,7 +280,7 @@
       "specs": [
         {
           "label": "Size",
-          "value": "6 \u00d7 6 ft (King)"
+          "value": "6 × 6 ft (King)"
         },
         {
           "label": "Frame",
@@ -314,7 +317,7 @@
       "specs": [
         {
           "label": "Size",
-          "value": "6 \u00d7 6 ft (King)"
+          "value": "6 × 6 ft (King)"
         },
         {
           "label": "Upholstery",
@@ -347,11 +350,11 @@
       "icon": "wardrobe",
       "image": "/photostitus/royale-classic-bedroom-set.jpeg",
       "short": "A complete gold-trimmed classic set: bed, two nightstands and a dresser.",
-      "description": "Furnish the whole bedroom in one go. The Royale set brings together a richly tufted brown-and-gold bed, two elegant nightstands and a matching dresser \u2014 coordinated craftsmanship for a truly luxurious retreat.",
+      "description": "Furnish the whole bedroom in one go. The Royale set brings together a richly tufted brown-and-gold bed, two elegant nightstands and a matching dresser — coordinated craftsmanship for a truly luxurious retreat.",
       "specs": [
         {
           "label": "Bed size",
-          "value": "6 \u00d7 6 ft (King)"
+          "value": "6 × 6 ft (King)"
         },
         {
           "label": "Includes",
@@ -389,7 +392,7 @@
       "specs": [
         {
           "label": "Size",
-          "value": "5 \u00d7 6 ft (Queen)"
+          "value": "5 × 6 ft (Queen)"
         },
         {
           "label": "Upholstery",
@@ -422,11 +425,11 @@
       "icon": "wardrobe",
       "image": "/photostitus/aurora-white-bedroom-set.jpeg",
       "short": "White-and-gold suite: bed, dressing table with mirror and two nightstands.",
-      "description": "The Aurora is our flagship suite \u2014 a tufted white-and-gold bed paired with a full dressing table and mirror plus two matching nightstands. Everything you need for an elegant, coordinated master bedroom.",
+      "description": "The Aurora is our flagship suite — a tufted white-and-gold bed paired with a full dressing table and mirror plus two matching nightstands. Everything you need for an elegant, coordinated master bedroom.",
       "specs": [
         {
           "label": "Bed size",
-          "value": "6 \u00d7 6 ft (King)"
+          "value": "6 × 6 ft (King)"
         },
         {
           "label": "Includes",
@@ -464,7 +467,7 @@
       "specs": [
         {
           "label": "Size",
-          "value": "5 \u00d7 6 ft (Queen)"
+          "value": "5 × 6 ft (Queen)"
         },
         {
           "label": "Frame",
@@ -501,7 +504,7 @@
       "specs": [
         {
           "label": "Size",
-          "value": "6 \u00d7 6 ft (King)"
+          "value": "6 × 6 ft (King)"
         },
         {
           "label": "Upholstery",
@@ -534,12 +537,12 @@
       "tone": "from-[#eef0f1] to-[#a9b0b5]",
       "icon": "bed",
       "image": "/photostitus/frost-grey-tufted-bed.jpeg",
-      "short": "A white frame with soft grey square-tufted panels \u2014 calm and contemporary.",
+      "short": "A white frame with soft grey square-tufted panels — calm and contemporary.",
       "description": "The Frost pairs a clean white frame with gentle grey square-tufted panels for a soft, soothing look. Understated and versatile, it settles quietly into any colour scheme.",
       "specs": [
         {
           "label": "Size",
-          "value": "5 \u00d7 6 ft (Queen)"
+          "value": "5 × 6 ft (Queen)"
         },
         {
           "label": "Frame",
@@ -571,11 +574,11 @@
       "icon": "bed",
       "image": "/photostitus/heritage-wood-tufted-bed.jpeg",
       "short": "Warm hardwood framing around soft grey diamond-tufted panels.",
-      "description": "The Heritage marries natural warm-wood framing with plush grey diamond-tufted panels. It's the best of both worlds \u2014 the solidity of real wood with the comfort of a padded headboard.",
+      "description": "The Heritage marries natural warm-wood framing with plush grey diamond-tufted panels. It's the best of both worlds — the solidity of real wood with the comfort of a padded headboard.",
       "specs": [
         {
           "label": "Size",
-          "value": "6 \u00d7 6 ft (King)"
+          "value": "6 × 6 ft (King)"
         },
         {
           "label": "Frame",
@@ -612,7 +615,7 @@
       "specs": [
         {
           "label": "Bed size",
-          "value": "5 \u00d7 6 ft (Queen)"
+          "value": "5 × 6 ft (Queen)"
         },
         {
           "label": "Includes",
@@ -650,7 +653,7 @@
       "specs": [
         {
           "label": "Size",
-          "value": "6 \u00d7 6 ft (King)"
+          "value": "6 × 6 ft (King)"
         },
         {
           "label": "Upholstery",
