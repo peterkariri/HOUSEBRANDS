@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Truck, ShieldCheck, CreditCard, RotateCcw } from "lucide-react";
 import { PageHero } from "@/components/page-hero";
 import { ShopGrid } from "@/components/shop-grid";
+import { getProducts } from "@/lib/products-store";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Shop Beds & Bedroom Furniture in Eldoret",
@@ -16,7 +19,9 @@ const perks = [
   { icon: RotateCcw, t: "Easy returns", d: "7-day return policy" },
 ];
 
-export default function ShopPage() {
+export default async function ShopPage() {
+  const products = await getProducts();
+
   return (
     <>
       <PageHero
@@ -42,7 +47,7 @@ export default function ShopPage() {
         </div>
       </section>
 
-      <ShopGrid />
+      <ShopGrid products={products} />
     </>
   );
 }

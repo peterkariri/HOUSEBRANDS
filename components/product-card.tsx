@@ -64,9 +64,15 @@ export function ProductCard({ product }: { product: Product }) {
         </div>
         <div className="mt-auto flex items-end justify-between pt-3">
           <div>
-            <p className="font-heading text-lg font-bold text-forest">{money(product.price)}</p>
-            {product.oldPrice && (
-              <p className="text-xs text-slate line-through">{money(product.oldPrice)}</p>
+            {product.priceNegotiable ? (
+              <p className="font-heading text-sm font-bold text-forest">Price negotiable</p>
+            ) : (
+              <>
+                <p className="font-heading text-lg font-bold text-forest">{money(product.price)}</p>
+                {product.oldPrice && (
+                  <p className="text-xs text-slate line-through">{money(product.oldPrice)}</p>
+                )}
+              </>
             )}
           </div>
           <span

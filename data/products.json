@@ -1,0 +1,674 @@
+{
+  "products": [
+    {
+      "slug": "amani-classic-tufted-bed",
+      "name": "Amani Classic Tufted Bed",
+      "category": "Wooden Beds",
+      "price": 42000,
+      "rating": 4.8,
+      "reviews": 64,
+      "inStock": true,
+      "tone": "from-[#e8ddc7] to-[#c9b48c]",
+      "icon": "bed",
+      "image": "/photostitus/amani-classic-tufted-bed.jpeg",
+      "short": "A timeless espresso-wood frame with a soft cream tufted headboard and footboard.",
+      "description": "The Amani pairs a rich dark hardwood frame with a deep-buttoned cream headboard and matching footboard for a look that never dates. Solid, sturdy and beautifully finished \u2014 a warm, classic centrepiece for any bedroom.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "6 \u00d7 6 ft (King)"
+        },
+        {
+          "label": "Frame",
+          "value": "Solid hardwood, espresso finish"
+        },
+        {
+          "label": "Headboard",
+          "value": "Padded & button-tufted"
+        },
+        {
+          "label": "Base",
+          "value": "Reinforced wooden slats"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "pearl-white-tufted-bed",
+      "name": "Pearl White Tufted Bed",
+      "category": "Upholstered Beds",
+      "price": 38000,
+      "rating": 4.7,
+      "reviews": 51,
+      "inStock": true,
+      "tone": "from-[#f1ece1] to-[#ddceb0]",
+      "icon": "bed",
+      "image": "/photostitus/pearl-white-tufted-bed.jpeg",
+      "short": "Clean, bright and elegant \u2014 a crisp white frame with a button-tufted headboard.",
+      "description": "The Pearl brings a fresh, airy feel to the bedroom with its all-white wooden frame and softly padded, button-tufted headboard. It lifts any space and pairs effortlessly with light or bold bedding.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "5 \u00d7 6 ft (Queen)"
+        },
+        {
+          "label": "Frame",
+          "value": "Wood, white matte finish"
+        },
+        {
+          "label": "Headboard",
+          "value": "Upholstered & tufted"
+        },
+        {
+          "label": "Base",
+          "value": "Slatted, no box spring needed"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "regal-carved-poster-bed",
+      "name": "Regal Carved Poster Bed",
+      "category": "Luxury Beds",
+      "price": 68000,
+      "rating": 4.9,
+      "reviews": 38,
+      "badge": "Low Stock",
+      "inStock": true,
+      "tone": "from-[#d8cbb0] to-[#b09873]",
+      "icon": "bed",
+      "image": "/photostitus/regal-carved-poster-bed.jpeg",
+      "short": "Hand-carved black hardwood with tall turned posts and cream leather tufting.",
+      "description": "A true statement piece. The Regal features ornately hand-carved black hardwood, tall turned bedposts and a plush cream leather-look tufted headboard. Old-world grandeur, built by skilled local craftsmen.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "6 \u00d7 6 ft (King)"
+        },
+        {
+          "label": "Frame",
+          "value": "Hand-carved hardwood"
+        },
+        {
+          "label": "Headboard",
+          "value": "Deep-buttoned leather-look"
+        },
+        {
+          "label": "Detail",
+          "value": "Turned posts, glossy finish"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "mahogany-deluxe-bed",
+      "name": "Mahogany Deluxe Bed",
+      "category": "Wooden Beds",
+      "price": 46000,
+      "oldPrice": 55000,
+      "rating": 4.6,
+      "reviews": 42,
+      "badge": "Sale",
+      "inStock": true,
+      "tone": "from-[#e0c3a8] to-[#a9704a]",
+      "icon": "bed",
+      "image": "/photostitus/mahogany-deluxe-bed.jpeg",
+      "short": "Rich mahogany finish with padded grey panels for understated warmth.",
+      "description": "The Mahogany Deluxe combines a warm reddish-brown hardwood frame with softly padded grey panels on the headboard and footboard. Solid, substantial and welcoming \u2014 a dependable classic at a great price.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "6 \u00d7 6 ft (King)"
+        },
+        {
+          "label": "Frame",
+          "value": "Solid wood, mahogany finish"
+        },
+        {
+          "label": "Panels",
+          "value": "Padded grey upholstery"
+        },
+        {
+          "label": "Base",
+          "value": "Reinforced slats"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "emerald-artdeco-bed",
+      "name": "Emerald Art-Deco Bed",
+      "category": "Modern Beds",
+      "price": 58000,
+      "rating": 4.9,
+      "reviews": 73,
+      "badge": "Best Seller",
+      "inStock": true,
+      "tone": "from-[#bcd3c2] to-[#2f6b4f]",
+      "icon": "bed",
+      "image": "/photostitus/emerald-artdeco-bed.jpeg",
+      "short": "Bold emerald velvet with gold accent strips in a striking stepped design.",
+      "description": "Make a statement with the Emerald. Deep green velvet is offset by gleaming gold accent strips and a bold, stepped art-deco silhouette. Luxurious, on-trend and unmistakably premium.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "6 \u00d7 6 ft (King)"
+        },
+        {
+          "label": "Upholstery",
+          "value": "Emerald velvet"
+        },
+        {
+          "label": "Accents",
+          "value": "Gold-finish trim"
+        },
+        {
+          "label": "Base",
+          "value": "Slatted platform"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ],
+      "oldPrice": null,
+      "priceNegotiable": false,
+      "updatedAt": "2026-08-07T20:52:09.249Z"
+    },
+    {
+      "slug": "cloud-grey-storage-bed",
+      "name": "Cloud Grey Storage Bed",
+      "category": "Upholstered Beds",
+      "price": 52000,
+      "rating": 4.8,
+      "reviews": 66,
+      "badge": "New",
+      "inStock": true,
+      "tone": "from-[#d9dade] to-[#9a9ca3]",
+      "icon": "bed",
+      "image": "/photostitus/cloud-grey-storage-bed.jpeg",
+      "short": "Plush grey velvet with diamond tufting and a practical storage base.",
+      "description": "The Cloud wraps you in soft grey velvet with elegant diamond tufting, while its raised base adds valuable hidden storage underneath. Comfort and clever function in one contemporary design.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "6 \u00d7 6 ft (King)"
+        },
+        {
+          "label": "Upholstery",
+          "value": "Grey velvet, diamond-tufted"
+        },
+        {
+          "label": "Storage",
+          "value": "Under-bed storage base"
+        },
+        {
+          "label": "Base",
+          "value": "Slatted platform"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "savannah-panel-bed",
+      "name": "Savannah Panel Bed",
+      "category": "Wooden Beds",
+      "price": 40000,
+      "rating": 4.6,
+      "reviews": 34,
+      "inStock": true,
+      "tone": "from-[#f0ece3] to-[#cdc3b2]",
+      "icon": "bed",
+      "image": "/photostitus/savannah-panel-bed.jpeg",
+      "short": "A crisp white raised-panel frame with clean, tailored lines.",
+      "description": "The Savannah keeps things simple and sophisticated with a bright white wooden frame and detailed raised panels on the headboard and footboard. Sturdy, versatile and endlessly easy to style.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "5 \u00d7 6 ft (Queen)"
+        },
+        {
+          "label": "Frame",
+          "value": "Wood, white finish"
+        },
+        {
+          "label": "Detail",
+          "value": "Raised panel headboard & footboard"
+        },
+        {
+          "label": "Base",
+          "value": "Slatted"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "oakline-channel-bed",
+      "name": "Oakline Channel Bed",
+      "category": "Modern Beds",
+      "price": 44000,
+      "rating": 4.7,
+      "reviews": 29,
+      "badge": "New",
+      "inStock": true,
+      "tone": "from-[#e7d8bd] to-[#3a4a63]",
+      "icon": "bed",
+      "image": "/photostitus/oakline-channel-bed.jpeg",
+      "short": "Light oak framing with deep navy channel-tufted upholstery.",
+      "description": "The Oakline blends natural light-oak tones with rich navy channel-tufted panels for a fresh, Scandinavian-meets-luxe look. A calm, contemporary choice for the modern bedroom.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "6 \u00d7 6 ft (King)"
+        },
+        {
+          "label": "Frame",
+          "value": "Light oak finish"
+        },
+        {
+          "label": "Upholstery",
+          "value": "Navy channel tufting"
+        },
+        {
+          "label": "Base",
+          "value": "Slatted platform"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "noir-gold-luxe-bed",
+      "name": "Noir Gold Luxe Bed",
+      "category": "Luxury Beds",
+      "price": 72000,
+      "rating": 4.9,
+      "reviews": 58,
+      "badge": "Best Seller",
+      "inStock": true,
+      "tone": "from-[#4a4a4a] to-[#111111]",
+      "icon": "bed",
+      "image": "/photostitus/noir-gold-luxe-bed.jpeg",
+      "short": "Black diamond-tufted leather with gold Greek-key accents and nightstands.",
+      "description": "Pure drama. The Noir Gold features black diamond-tufted upholstery with striking gold Greek-key detailing on the headboard, complete with matching bedside nightstands. Bold, glamorous and built to impress.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "6 \u00d7 6 ft (King)"
+        },
+        {
+          "label": "Upholstery",
+          "value": "Black leather-look, tufted"
+        },
+        {
+          "label": "Includes",
+          "value": "2 matching nightstands"
+        },
+        {
+          "label": "Accents",
+          "value": "Gold Greek-key trim"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "royale-classic-bedroom-set",
+      "name": "Royale Classic Bedroom Set",
+      "category": "Bedroom Sets",
+      "price": 95000,
+      "rating": 4.9,
+      "reviews": 47,
+      "badge": "Best Seller",
+      "inStock": true,
+      "tone": "from-[#e6d3b0] to-[#b98a4e]",
+      "icon": "wardrobe",
+      "image": "/photostitus/royale-classic-bedroom-set.jpeg",
+      "short": "A complete gold-trimmed classic set: bed, two nightstands and a dresser.",
+      "description": "Furnish the whole bedroom in one go. The Royale set brings together a richly tufted brown-and-gold bed, two elegant nightstands and a matching dresser \u2014 coordinated craftsmanship for a truly luxurious retreat.",
+      "specs": [
+        {
+          "label": "Bed size",
+          "value": "6 \u00d7 6 ft (King)"
+        },
+        {
+          "label": "Includes",
+          "value": "Bed, 2 nightstands, dresser"
+        },
+        {
+          "label": "Finish",
+          "value": "White & gold, tufted panels"
+        },
+        {
+          "label": "Style",
+          "value": "Classic / royal"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "velvet-wingback-bed",
+      "name": "Velvet Wingback Bed",
+      "category": "Upholstered Beds",
+      "price": 50000,
+      "oldPrice": 60000,
+      "rating": 4.8,
+      "reviews": 55,
+      "badge": "Sale",
+      "inStock": true,
+      "tone": "from-[#d8c6c2] to-[#7d6a66]",
+      "icon": "bed",
+      "image": "/photostitus/velvet-wingback-bed.jpeg",
+      "short": "A cocooning wingback headboard in soft mauve velvet with channel tufting.",
+      "description": "The Velvet Wingback wraps its tall, winged headboard around you for a cosy, enveloping feel. Vertical channel tufting in soft mauve velvet and a sturdy storage base make it as practical as it is plush.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "5 \u00d7 6 ft (Queen)"
+        },
+        {
+          "label": "Upholstery",
+          "value": "Mauve velvet, channel-tufted"
+        },
+        {
+          "label": "Headboard",
+          "value": "Tall wingback"
+        },
+        {
+          "label": "Base",
+          "value": "Storage platform"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "aurora-white-bedroom-set",
+      "name": "Aurora White Bedroom Set",
+      "category": "Bedroom Sets",
+      "price": 110000,
+      "rating": 5,
+      "reviews": 39,
+      "badge": "Best Seller",
+      "inStock": true,
+      "tone": "from-[#f2ede3] to-[#cbb488]",
+      "icon": "wardrobe",
+      "image": "/photostitus/aurora-white-bedroom-set.jpeg",
+      "short": "White-and-gold suite: bed, dressing table with mirror and two nightstands.",
+      "description": "The Aurora is our flagship suite \u2014 a tufted white-and-gold bed paired with a full dressing table and mirror plus two matching nightstands. Everything you need for an elegant, coordinated master bedroom.",
+      "specs": [
+        {
+          "label": "Bed size",
+          "value": "6 \u00d7 6 ft (King)"
+        },
+        {
+          "label": "Includes",
+          "value": "Bed, dresser + mirror, 2 nightstands"
+        },
+        {
+          "label": "Finish",
+          "value": "White with gold trim"
+        },
+        {
+          "label": "Headboard",
+          "value": "Button-tufted"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "onyx-metal-tufted-bed",
+      "name": "Onyx Metal Tufted Bed",
+      "category": "Metal Beds",
+      "price": 34000,
+      "oldPrice": 40000,
+      "rating": 4.6,
+      "reviews": 61,
+      "badge": "Sale",
+      "inStock": true,
+      "tone": "from-[#5b5b5b] to-[#1c1c1c]",
+      "icon": "bed",
+      "image": "/photostitus/onyx-metal-tufted-bed.jpeg",
+      "short": "A strong powder-coated metal frame dressed with black tufted panels.",
+      "description": "The Onyx combines the strength of a powder-coated steel frame with the comfort of black diamond-tufted panels. Exceptionally durable, easy to move and a great-value modern choice.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "5 \u00d7 6 ft (Queen)"
+        },
+        {
+          "label": "Frame",
+          "value": "Powder-coated steel"
+        },
+        {
+          "label": "Panels",
+          "value": "Black tufted upholstery"
+        },
+        {
+          "label": "Strength",
+          "value": "Heavy-duty, rust-resistant"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "diamond-white-luxe-bed",
+      "name": "Diamond White Luxe Bed",
+      "category": "Luxury Beds",
+      "price": 66000,
+      "rating": 4.9,
+      "reviews": 44,
+      "badge": "New",
+      "inStock": true,
+      "tone": "from-[#f3efe6] to-[#d8b779]",
+      "icon": "bed",
+      "image": "/photostitus/diamond-white-luxe-bed.jpeg",
+      "short": "White leather-look upholstery with a dazzling gold diamond geometric pattern.",
+      "description": "The Diamond White turns heads with its crisp white upholstery and bold gold diamond geometric tufting across the extended headboard. A luxurious, modern showpiece for the statement bedroom.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "6 \u00d7 6 ft (King)"
+        },
+        {
+          "label": "Upholstery",
+          "value": "White leather-look"
+        },
+        {
+          "label": "Pattern",
+          "value": "Gold diamond geometric"
+        },
+        {
+          "label": "Headboard",
+          "value": "Extended with side panels"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "frost-grey-tufted-bed",
+      "name": "Frost Grey Tufted Bed",
+      "category": "Upholstered Beds",
+      "price": 39000,
+      "oldPrice": 46000,
+      "rating": 4.7,
+      "reviews": 48,
+      "badge": "Sale",
+      "inStock": true,
+      "tone": "from-[#eef0f1] to-[#a9b0b5]",
+      "icon": "bed",
+      "image": "/photostitus/frost-grey-tufted-bed.jpeg",
+      "short": "A white frame with soft grey square-tufted panels \u2014 calm and contemporary.",
+      "description": "The Frost pairs a clean white frame with gentle grey square-tufted panels for a soft, soothing look. Understated and versatile, it settles quietly into any colour scheme.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "5 \u00d7 6 ft (Queen)"
+        },
+        {
+          "label": "Frame",
+          "value": "White finish wood"
+        },
+        {
+          "label": "Panels",
+          "value": "Grey square tufting"
+        },
+        {
+          "label": "Base",
+          "value": "Slatted"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "heritage-wood-tufted-bed",
+      "name": "Heritage Wood Tufted Bed",
+      "category": "Wooden Beds",
+      "price": 43000,
+      "rating": 4.7,
+      "reviews": 37,
+      "inStock": true,
+      "tone": "from-[#e3d0b6] to-[#a98a63]",
+      "icon": "bed",
+      "image": "/photostitus/heritage-wood-tufted-bed.jpeg",
+      "short": "Warm hardwood framing around soft grey diamond-tufted panels.",
+      "description": "The Heritage marries natural warm-wood framing with plush grey diamond-tufted panels. It's the best of both worlds \u2014 the solidity of real wood with the comfort of a padded headboard.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "6 \u00d7 6 ft (King)"
+        },
+        {
+          "label": "Frame",
+          "value": "Solid wood, natural finish"
+        },
+        {
+          "label": "Panels",
+          "value": "Grey diamond tufting"
+        },
+        {
+          "label": "Base",
+          "value": "Reinforced slats"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "bloom-bed-wardrobe-set",
+      "name": "Bloom Bed & Wardrobe Set",
+      "category": "Bedroom Sets",
+      "price": 88000,
+      "rating": 4.8,
+      "reviews": 31,
+      "badge": "New",
+      "inStock": true,
+      "tone": "from-[#eae6ee] to-[#9d94ad]",
+      "icon": "wardrobe",
+      "image": "/photostitus/bloom-bed-wardrobe-set.jpeg",
+      "short": "A floral-upholstered metal bed with a matching 4-door wardrobe.",
+      "description": "The Bloom set pairs a sturdy white metal bed dressed in soft floral fabric with a spacious matching four-door wardrobe. Coordinated storage and sleeping in one value-packed package.",
+      "specs": [
+        {
+          "label": "Bed size",
+          "value": "5 \u00d7 6 ft (Queen)"
+        },
+        {
+          "label": "Includes",
+          "value": "Metal bed + 4-door wardrobe"
+        },
+        {
+          "label": "Upholstery",
+          "value": "Floral fabric panels"
+        },
+        {
+          "label": "Wardrobe",
+          "value": "Hanging + shelved storage"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    },
+    {
+      "slug": "slate-gold-storage-bed",
+      "name": "Slate Gold Storage Bed",
+      "category": "Modern Beds",
+      "price": 54000,
+      "oldPrice": 63000,
+      "rating": 4.8,
+      "reviews": 52,
+      "badge": "Sale",
+      "inStock": true,
+      "tone": "from-[#cfd3d6] to-[#5a616a]",
+      "icon": "bed",
+      "image": "/photostitus/slate-gold-storage-bed.jpeg",
+      "short": "Slate-grey tufting finished with gold trim over a handy storage base.",
+      "description": "The Slate Gold brings quiet luxury with deep slate-grey tufting, a slim gold-trim border and a practical raised storage base. Modern, refined and endlessly easy to live with.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "6 \u00d7 6 ft (King)"
+        },
+        {
+          "label": "Upholstery",
+          "value": "Slate-grey, tufted"
+        },
+        {
+          "label": "Accents",
+          "value": "Gold trim border"
+        },
+        {
+          "label": "Storage",
+          "value": "Under-bed storage base"
+        },
+        {
+          "label": "Warranty",
+          "value": "2 years"
+        }
+      ]
+    }
+  ]
+}

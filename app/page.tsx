@@ -23,16 +23,10 @@ import { Stars } from "@/components/stars";
 import { StatCounter } from "@/components/stat-counter";
 import { FaqAccordion } from "@/components/faq-accordion";
 import { site, serviceAreas, waLink } from "@/lib/site";
-import {
-  products,
-  categories,
-  testimonials,
-  stats,
-  faqs,
-  posts,
-  cleaningServices,
-  movingServices,
-} from "@/lib/data";
+import { testimonials, stats, faqs, posts, cleaningServices, movingServices } from "@/lib/data";
+import { getCategories, getProducts, getLatestProducts } from "@/lib/products-store";
+
+export const dynamic = "force-dynamic";
 
 const trust = [
   { icon: Truck, title: "Fast Delivery", text: "Same-day across Eldoret" },
@@ -50,13 +44,14 @@ const catIconTone: Record<string, string> = {
   "bedroom-sets": "from-[#e6d3b0] to-[#cbb488]",
 };
 
-export default function Home() {
+export default async function Home() {
+  const [products, categories, featured] = await Promise.all([
+    getProducts(),
+    getCategories(),
+    getLatestProducts(8),
+  ]);
   const bestSellers = products
     .filter((p) => p.badge === "Best Seller" || p.badge === "Sale")
-    .slice(0, 4);
-  const arrivals = products
-    .filter((p) => p.badge === "New")
-    .concat(products)
     .slice(0, 4);
 
   return (
@@ -208,7 +203,11 @@ export default function Home() {
                 href="/shop"
                 className="group flex h-full flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-[var(--shadow-soft)] transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-lift)]"
               >
-                <FurnitureVisual icon={c.icon} tone={catIconTone[c.slug]} className="aspect-[5/4] w-full" />
+                <FurnitureVisual
+                  icon={c.icon}
+                  tone={catIconTone[c.slug] ?? "from-[#e8ddc7] to-[#c9b48c]"}
+                  className="aspect-[5/4] w-full"
+                />
                 <div className="flex flex-1 flex-col p-4">
                   <h3 className="font-heading text-base font-semibold text-ink group-hover:text-forest">
                     {c.name}
@@ -410,22 +409,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------------- LATEST ARRIVALS ---------------- */}
-      <section className="container-page py-16 lg:py-24">
-        <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
-          <SectionHeading eyebrow="Just Landed" title="Latest arrivals" />
-          <Button href="/shop" variant="ghost" className="shrink-0">
-            See what&apos;s new <ArrowRight className="h-4 w-4" />
-          </Button>
-        </div>
-        <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
-          {arrivals.map((p, i) => (
-            <Reveal key={p.slug} delay={i * 70}>
-              <ProductCard product={p} />
-            </Reveal>
-          ))}
-        </div>
-      </section>
+      {/* ---------------- FEATURED PRODUCTS ---------------- */}
+      {featured.length > 0 && (
+        <section className="container-page py-16 lg:py-24">
+          <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+            <SectionHeading eyebrow="Handpicked" title="Featured products" />
+            <Button href="/shop" variant="ghost" className="shrink-0">
+              Shop all products <ArrowRight className="h-4 w-4" />
+            </Button>
+          </div>
+          <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+            {featured.map((p, i) => (
+              <Reveal key={p.slug} delay={i * 70}>
+                <ProductCard product={p} />
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* ---------------- TESTIMONIALS ---------------- */}
       <section className="bg-white py-16 lg:py-24">

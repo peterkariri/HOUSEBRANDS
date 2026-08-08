@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+
+export const dynamic = "force-dynamic";
 import Link from "next/link";
 import {
   Truck,
@@ -13,10 +15,12 @@ import { FurnitureVisual } from "@/components/furniture-visual";
 import { Stars } from "@/components/stars";
 import { ProductBuyBox } from "@/components/product-buybox";
 import { ProductCard } from "@/components/product-card";
-import { products, money } from "@/lib/data";
+import { money } from "@/lib/data";
+import { getProducts } from "@/lib/products-store";
 import { site } from "@/lib/site";
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const products = await getProducts();
   return products.map((p) => ({ slug: p.slug }));
 }
 
@@ -26,10 +30,11 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  const products = await getProducts();
   const product = products.find((p) => p.slug === slug);
   if (!product) return { title: "Product not found" };
   return {
-    title: `${product.name} — ${money(product.price)}`,
+    title: `${product.name} — ${product.priceNegotiable ? "Price negotiable" : money(product.price)}`,
     description: product.short,
     openGraph: { title: product.name, description: product.short },
   };
@@ -47,6 +52,7 @@ export default async function ProductPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  const products = await getProducts();
   const product = products.find((p) => p.slug === slug);
   if (!product) notFound();
 
@@ -71,14 +77,16 @@ export default async function ProductPage({
       ratingValue: product.rating,
       reviewCount: product.reviews,
     },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "KES",
-      price: product.price,
-      availability: product.inStock
-        ? "https://schema.org/InStock"
-        : "https://schema.org/OutOfStock",
-    },
+    offers: product.priceNegotiable
+      ? undefined
+      : {
+          "@type": "Offer",
+          priceCurrency: "KES",
+          price: product.price,
+          availability: product.inStock
+            ? "https://schema.org/InStock"
+            : "https://schema.org/OutOfStock",
+        },
   };
 
   return (
@@ -139,16 +147,25 @@ export default async function ProductPage({
             </div>
 
             <div className="mt-5 flex flex-wrap items-center gap-3">
-              <span className="font-heading text-3xl font-extrabold text-forest">{money(product.price)}</span>
-              {product.oldPrice && (
-                <span className="text-lg text-slate line-through">{money(product.oldPrice)}</span>
-              )}
-              {discount > 0 && (
-                <span className="rounded-full bg-danger/10 px-2.5 py-1 text-sm font-bold text-danger">
-                  Save {discount}%
-                </span>
+              {product.priceNegotiable ? (
+                <span className="font-heading text-3xl font-extrabold text-forest">Price negotiable</span>
+              ) : (
+                <>
+                  <span className="font-heading text-3xl font-extrabold text-forest">{money(product.price)}</span>
+                  {product.oldPrice && (
+                    <span className="text-lg text-slate line-through">{money(product.oldPrice)}</span>
+                  )}
+                  {discount > 0 && (
+                    <span className="rounded-full bg-danger/10 px-2.5 py-1 text-sm font-bold text-danger">
+                      Save {discount}%
+                    </span>
+                  )}
+                </>
               )}
             </div>
+            {product.priceNegotiable && (
+              <p className="mt-1 text-sm text-slate">Message us on WhatsApp with your order for a quote.</p>
+            )}
 
             <div className="mt-3 inline-flex items-center gap-2 rounded-full bg-success/10 px-3 py-1 text-sm font-medium text-success">
               <span className="h-2 w-2 rounded-full bg-success" />

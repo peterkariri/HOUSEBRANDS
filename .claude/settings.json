@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(curl -s http://localhost:3000/shop)",
+      "Bash(curl -s http://localhost:3000/shop/test-negotiable-sofa)",
+      "Bash(python3 -c ' *)",
+      "Bash(mv /tmp/products_clean.json data/products.json)",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\(0\\)\\); console.log\\(d.products.length, 'products left'\\)\")",
+      "Bash(npm install *)"
+    ]
+  }
+}

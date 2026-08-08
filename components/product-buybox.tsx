@@ -10,13 +10,18 @@ export function ProductBuyBox({ product }: { product: Product }) {
   const [added, setAdded] = useState(false);
   const [wish, setWish] = useState(false);
 
-  const orderMsg =
-    `Hello ${site.name}! I'd like to order:%0A%0A` +
-    `*${product.name}*%0A` +
-    `Quantity: ${qty}%0A` +
-    `Price: ${money(product.price)} each%0A` +
-    `Total: ${money(product.price * qty)}%0A%0A` +
-    `Please confirm availability and delivery.`;
+  const orderMsg = product.priceNegotiable
+    ? `Hello ${site.name}! I'd like to order:%0A%0A` +
+      `*${product.name}*%0A` +
+      `Quantity: ${qty}%0A` +
+      `Price: Negotiable%0A%0A` +
+      `Please send me a quote and confirm availability and delivery.`
+    : `Hello ${site.name}! I'd like to order:%0A%0A` +
+      `*${product.name}*%0A` +
+      `Quantity: ${qty}%0A` +
+      `Price: ${money(product.price)} each%0A` +
+      `Total: ${money(product.price * qty)}%0A%0A` +
+      `Please confirm availability and delivery.`;
   const orderHref = `https://wa.me/${site.whatsapp}?text=${orderMsg}`;
 
   return (
@@ -40,7 +45,13 @@ export function ProductBuyBox({ product }: { product: Product }) {
           </button>
         </div>
         <p className="text-sm text-slate">
-          Total: <span className="font-heading text-lg font-bold text-forest">{money(product.price * qty)}</span>
+          {product.priceNegotiable ? (
+            <span className="font-heading text-lg font-bold text-forest">Price negotiable — ask on order</span>
+          ) : (
+            <>
+              Total: <span className="font-heading text-lg font-bold text-forest">{money(product.price * qty)}</span>
+            </>
+          )}
         </p>
       </div>
 

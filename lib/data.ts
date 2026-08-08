@@ -4,6 +4,8 @@ export type Product = {
   category: string;
   price: number;
   oldPrice?: number;
+  /** When true, hide the price and show "Price negotiable — ask on order" instead. */
+  priceNegotiable?: boolean;
   rating: number;
   reviews: number;
   badge?: "New" | "Best Seller" | "Sale" | "Low Stock";

@@ -3,9 +3,8 @@
 import { useMemo, useState } from "react";
 import { SlidersHorizontal, Search } from "lucide-react";
 import { ProductCard } from "./product-card";
-import { products as allProducts } from "@/lib/data";
+import type { Product } from "@/lib/data";
 
-const cats = ["All", ...Array.from(new Set(allProducts.map((p) => p.category)))];
 const sorts = [
   { key: "featured", label: "Featured" },
   { key: "price-asc", label: "Price: Low to High" },
@@ -13,13 +12,14 @@ const sorts = [
   { key: "rating", label: "Top Rated" },
 ] as const;
 
-export function ShopGrid() {
+export function ShopGrid({ products }: { products: Product[] }) {
   const [cat, setCat] = useState("All");
   const [sort, setSort] = useState<(typeof sorts)[number]["key"]>("featured");
   const [query, setQuery] = useState("");
 
+  const categories = useMemo(() => ["All", ...Array.from(new Set(products.map((p) => p.category)))], [products]);
   const list = useMemo(() => {
-    let l = allProducts.filter((p) => (cat === "All" ? true : p.category === cat));
+    let l = products.filter((p) => (cat === "All" ? true : p.category === cat));
     if (query.trim()) {
       const q = query.toLowerCase();
       l = l.filter((p) => p.name.toLowerCase().includes(q) || p.category.toLowerCase().includes(q));
@@ -29,7 +29,7 @@ export function ShopGrid() {
     else if (sort === "price-desc") l.sort((a, b) => b.price - a.price);
     else if (sort === "rating") l.sort((a, b) => b.rating - a.rating);
     return l;
-  }, [cat, sort, query]);
+  }, [cat, sort, query, products]);
 
   return (
     <div className="container-page py-12 lg:py-16">
@@ -63,7 +63,7 @@ export function ShopGrid() {
         </div>
 
         <div className="flex flex-wrap gap-2">
-          {cats.map((c) => (
+          {categories.map((c) => (
             <button
               key={c}
               onClick={() => setCat(c)}

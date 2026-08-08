@@ -42,7 +42,7 @@ export function Button({
 }: CommonProps & {
   href?: string;
   external?: boolean;
-} & Partial<ComponentProps<"a">>) {
+} & Partial<ComponentProps<"a"> & ComponentProps<"button">>) {
   const cls = `${base} ${variants[variant]} ${sizes[size]} ${className}`;
   if (href) {
     if (external || href.startsWith("http") || href.startsWith("tel:") || href.startsWith("mailto:")) {
